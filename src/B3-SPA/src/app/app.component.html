@@ -1,3 +1,29 @@
-<div class="container bg-info bg-opacity-25">
-  <p class="alert-danger"> Testando boostrap</p>
+<div class="vh-100 d-flex justify-content-center align-items-center" style="background-color: #004192">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="card bg-white">
+          <div class="card-body p-5">
+            <form class="mb-3 mt-md-4">
+              <h2 class="fw-bold mb-2 text-uppercase ">Cálculo de cdb</h2>
+              <p class=" mb-5">Informe o valor e o prazo abaixo</p>
+              <div class="mb-3">
+                <label for="valor" class="form-label ">Valor a ser aplicado</label>
+                <input type="number" min="1" step="any" class="form-control" id="valor" placeholder="exemplo 1000.00">
+              </div>
+              <div class="mb-3">
+                <label for="prazo" class="form-label ">Prazo</label>
+                <input type="number" min="1" [pattern]="0-9" class="form-control" id="prazo"
+                  placeholder="informe o prazo em meses">
+              </div>
+              <!-- aqui eu posso colocar uma mensagem de validação. -->
+              <div class="d-grid">
+                <button class="btn btn-outline-dark" type="submit">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
